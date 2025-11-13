@@ -1,0 +1,256 @@
+Project Name: Strimdex - Cashback-Powered Loyalty Ecosystem
+Framework: Next.js 15 (Latest) with TypeScript
+Timeline: MVP Development (6-8 weeks)
+Target Users: 50,000+ users, 500+ SMEs
+Technical Specifications
+Core Architecture Requirements
+text
+
+- Next.js 15 with App Router and React 19
+- TypeScript for type safety
+- Tailwind CSS v4 for styling
+- MySQL database with Prisma ORM
+- NextAuth.js for authentication
+- Flutterwave API integration for payments
+- Redis for caching and session management
+- Real-time features with WebSockets
+- PWA capabilities for mobile experience
+
+Database Schema Requirements
+
+Design database models for:
+
+    Users (with roles: user, SME, admin)
+
+    Wallets and transactions
+
+    VTU services (airtime, data, bills)
+
+    Marketplace products
+
+    Micro-tasks and surveys
+
+    Cashback campaigns
+
+    Referral system
+
+    Audit logs
+
+Key Pages & Components Structure
+User-Facing Pages
+text
+
+1. Landing Page (Hero, features, how it works)
+2. Authentication (Register/Login with role selection)
+3. Dashboard (Wallet balance, recent activities, quick actions)
+4. VTU Services (Airtime, Data, Cable TV, Electricity)
+5. Marketplace (Digital products with categories)
+6. Micro-tasks (Available tasks, progress tracking)
+7. Referral System (Share links, referral earnings)
+8. Transaction History
+9. Profile & Settings
+
+Admin Dashboard
+text
+
+1. Overview Analytics
+2. User Management
+3. SME Approval System
+4. Transaction Monitoring
+5. Task & Product Approval
+6. Fee Management
+7. System Settings
+8. Reports & Analytics
+
+SME Dashboard (Basic MVP)
+text
+
+1. Campaign Creation
+2. Wallet Funding
+3. Performance Analytics
+4. Customer Insights
+
+API Endpoints Structure
+text
+
+/auth/* - Authentication routes
+/api/users/* - User management
+/api/wallet/* - Wallet operations
+/api/vtu/* - VTU services
+/api/marketplace/* - Digital products
+/api/tasks/* - Micro-tasks system
+/api/cashback/* - Cashback calculations
+/api/referral/* - Referral tracking
+/api/admin/* - Admin operations
+/api/sme/* - SME functionalities
+
+Business Logic Implementation
+Cashback System Flow
+typescript
+
+// Pseudo-code for cashback logic
+1. User completes transaction (VTU, purchase, task)
+2. System identifies applicable cashback rate
+3. Calculate cashback amount
+4. Credit user wallet (locked balance)
+5. Debit merchant/SME wallet
+6. Update transaction records
+7. Trigger notifications
+
+Wallet Management
+
+    Multi-currency support (start with NGN)
+
+    Transaction history
+
+    Fund withdrawal restrictions
+
+    Cashback redemption rules
+
+Flutterwave Integration
+
+    VTU services integration
+
+    Payment processing
+
+    Webhook handling for transaction status
+
+    KYC/AML compliance
+
+Security & Performance Requirements
+Security Measures
+
+    Data encryption at rest and transit
+
+    Rate limiting on APIs
+
+    SQL injection prevention
+
+    XSS and CSRF protection
+
+    Secure authentication flows
+
+    Regular security audits
+
+Performance Optimization
+
+    Image optimization with Next.js
+
+    Database query optimization
+
+    CDN for static assets
+
+    Caching strategies
+
+    Lazy loading components
+
+    PWA for offline functionality
+
+Development Phases
+Phase 1 (Weeks 1-2): Foundation
+
+    Project setup and authentication
+
+    Basic user dashboard
+
+    Wallet system implementation
+
+Phase 2 (Weeks 3-4): Core Features
+
+    VTU services integration
+
+    Marketplace setup
+
+    Basic cashback system
+
+Phase 3 (Weeks 5-6): Advanced Features
+
+    Micro-tasks module
+
+    Referral system
+
+    Admin dashboard
+
+Phase 4 (Weeks 7-8): Polish & Launch
+
+    Testing and bug fixes
+
+    Performance optimization
+
+    Deployment and monitoring
+
+Success Metrics Tracking
+
+Implement analytics for:
+
+    User registration and activation rates
+
+    Transaction volumes and values
+
+    Cashback redemption rates
+
+    Referral conversion rates
+
+    Platform retention metrics
+
+Testing Requirements
+
+    Unit tests for business logic
+
+    Integration tests for APIs
+
+    E2E testing for user flows
+
+    Performance testing
+
+    Security vulnerability testing
+
+Deployment & DevOps
+
+    Vercel deployment configuration
+
+    Environment management
+
+    CI/CD pipeline setup
+
+    Monitoring and error tracking
+
+    Backup and recovery procedures
+
+Additional Requirements
+
+    Mobile-responsive design
+
+    Multi-language support (future-ready)
+
+    Accessibility compliance
+
+    SEO optimization
+
+    Social media integration for referrals
+
+Expected Output
+
+A fully functional Strimdex MVP with:
+
+    User registration and authentication
+
+    VTU services with cashback
+
+    Digital marketplace
+
+    Micro-tasks system
+
+    Referral program
+
+    Admin management panel
+
+    Wallet and transaction system
+
+    Flutterwave payment integration
+
+Priority: Focus on delivering a seamless user experience with robust cashback tracking, tasks system like hawkit and sidegig, and reliable VTU services as the core value proposition.
+
+Role: You are an expert full-stack developer specializing in Next.js, TypeScript, and Tailwind CSS. You are proficient in building scalable, component-based applications and translating business requirements into technical specifications.      
+
+Generate the complete, runnable codebase following these instructions precisely. 
